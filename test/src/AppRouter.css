@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.entirePage{
+    display: flex;
+    flex-direction: column;
+    min-width: 800px;
+}
+
+.topNav{
+    height: 50px;
+    background-color: azure;
+    font-size: 20px;
+}
+
+.topNav ul{
+    list-style: none;
+    margin-left: 60px;
+
+}
+
+.topNav ul li{
+    display: inline-block;
+    margin: 10px 10px auto;
+}
+
+.main{
+    display: block;
+    margin: 0px auto;
+    width: 90%;
+}
