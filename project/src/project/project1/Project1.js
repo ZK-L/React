@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import data from './data';
 import List from './List';
-function App() {
+import styles from './Project1.module.css';
+
+
+function Project1() {
   const [people, setpeople] = useState(data);
   return (
-    <main>
-      <section className='container'>
+    <main className={styles.main}>
+      <section className={styles.container}>
         <h3>{people.length} birthdays today</h3>
         <List people={people}/>
         <button onClick={()=>setpeople([])}>
@@ -17,4 +20,4 @@ function App() {
   )
 }
 
-export default App;
+export default Project1;
